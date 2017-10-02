@@ -157,8 +157,8 @@ tmux_conf_theme_right_separator_sub='|'
 #     - #{uptime_s}
 #     - #{username}
 #     - #{username_ssh}
-tmux_conf_theme_status_left=' ❐ #S | ↑#{?uptime_d, #{uptime_d}d,}#{?uptime_h, #{uptime_h}h,}#{?uptime_m, #{uptime_m}m,} '
-tmux_conf_theme_status_right='#{prefix}#{pairing} #{?battery_status, #{battery_status},}#{?battery_bar, #{battery_bar},}#{?battery_percentage, #{battery_percentage},} , %R , %d %b | #{username}#{root}'
+tmux_conf_theme_status_left=''
+tmux_conf_theme_status_right='#{prefix}#{pairing} #{battery_percentage} , %R , %d %b | #{username}#{root} '
 
 
 # status left style
@@ -168,7 +168,7 @@ tmux_conf_theme_status_left_attr='bold,none,none'
 
 # status right style
 tmux_conf_theme_status_right_fg='#8a8a8a,#e4e4e4,#000000' # light gray, white, black
-tmux_conf_theme_status_right_bg='#080808,#d70000,#e4e4e4' # dark gray, red, white
+tmux_conf_theme_status_right_bg='#080808' # dark gray, red, white
 tmux_conf_theme_status_right_attr='none,none,bold'
 
 # pairing indicator
@@ -230,7 +230,7 @@ tmux_conf_battery_status_discharging='↓'    # U+2193
 
 # clock style
 tmux_conf_theme_clock_colour='#00afff'  # light blue
-tmux_conf_theme_clock_style='24'
+tmux_conf_theme_clock_style='12'
 
 
 # -- clipboard -----------------------------------------------------------------
