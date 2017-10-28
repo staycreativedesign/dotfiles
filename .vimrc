@@ -97,7 +97,12 @@ set iskeyword+=_,$,@,%,# " none of these should be word dividers, so make them n
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/.keep
 vnoremap <silent> * :call VisualSearch('f')<CR>
 vnoremap <silent> # :call VisualSearch('b')<CR>
+
+" Quick write and quit
+" ------------------------
 nnoremap <leader>w :w!<cr>
+nnoremap <leader>q :q<cr>
+nnoremap <leader>wq :wq!<cr>
 
 " Indentation
 " ------------------------
@@ -252,5 +257,3 @@ augroup END
   " Start interactive EasyAlign in visual mode (e.g. vipea)
   xmap ea <Plug>(EasyAlign)
 
-  " Start interactive EasyAlign for a motion/text object (e.g. eaip)
-  " nmap ea <Plug>(EasyAlign)
