@@ -91,6 +91,7 @@ alias tk="tmux kill-session -t"
 alias rdt="bin/rails db:migrate RAILS_ENV=test"
 alias rdm="rake db:migrate"
 alias zrr="zeus rake routes"
+alias rr="rake routes | lolcat"
 alias zs="zeus server"
 alias zss="zeus start"
 alias zc="zeus console"
@@ -114,6 +115,7 @@ fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
+export FZF_DEFAULT_COMMAND='fd --type f'
 export PATH=$PATH:$HOME/.motivate
 export PATH=/usr/local/bin:$PATH
 motivate
