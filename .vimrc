@@ -102,7 +102,6 @@ vnoremap <silent> # :call VisualSearch('b')<CR>
 " ------------------------
 nnoremap <leader>w :w!<cr>
 nnoremap <leader>q :q<cr>
-nnoremap <leader>wq :wq!<cr>
 
 " Indentation
 " ------------------------
@@ -115,10 +114,6 @@ nnoremap <leader>wq :wq!<cr>
   set softtabstop=2
   set expandtab
   set nocursorline
-
-" Save files quicker
-" ------------------------
-  nnoremap <Leader>w :w<CR>
 
 " VP Vim Gutter
 " ------------------------
