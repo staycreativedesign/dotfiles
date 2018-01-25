@@ -115,7 +115,7 @@ fi
 
 fpath=(/usr/local/share/zsh-completions $fpath)
 
-export FZF_DEFAULT_COMMAND='fd --type f'
+# export FZF_DEFAULT_COMMAND='fd --type f'
 export PATH=$PATH:$HOME/.motivate
 export PATH=/usr/local/bin:$PATH
 motivate
