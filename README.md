@@ -93,6 +93,7 @@ ln -s ~/dotfiles/.motivate ~/
 
 #https://help.dreamhost.com/hc/en-us/articles/216499537-How-to-configure-passwordless-login-in-Mac-OS-X-and-Linux
 
+#https://superuser.com/questions/399360/shortcut-for-login-to-remote-computer-via-ssh
 
 
 
