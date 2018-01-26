@@ -91,7 +91,7 @@ ln -s ~/dotfiles/.motivate ~/
 
 #https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/
 
-
+#https://help.dreamhost.com/hc/en-us/articles/216499537-How-to-configure-passwordless-login-in-Mac-OS-X-and-Linux
 
 
 
