@@ -35,6 +35,12 @@ cd ~/
 
 rm -rf fonts
 
+brew install postgres
+
+brew install yarn
+
+brew install redis
+
 brew install fzf
 
 brew install python3
