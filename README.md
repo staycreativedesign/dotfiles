@@ -93,6 +93,14 @@ gem install tmuxinator
 
 ln -s ~/dotfiles/.motivate ~/
 
+#ngrok
+
+# cd into your local bin directory
+#cd /usr/local/bin
+
+# create symlink
+#ln -s /Applications/ngrok ngrok
+
 
 #https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/
 
