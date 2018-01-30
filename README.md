@@ -35,7 +35,7 @@ cd ~/
 
 rm -rf fonts
 
-brew install postgres
+brew install postgresql
 
 brew install yarn
 
