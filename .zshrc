@@ -97,6 +97,8 @@ alias zss="zeus start"
 alias zc="zeus console"
 alias irc="irssi"
 alias reddit="rtv"
+alias bi="bundle install"
+alias sg="shotgun config.ru"
 
 export EDITOR='vim'
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
