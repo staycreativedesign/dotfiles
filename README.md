@@ -59,6 +59,8 @@ brew install the_silver_searcher
 
 brew install tmux
 
+brew install ctags
+
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 cd ~/.vim/bundle/YouCompleteMe

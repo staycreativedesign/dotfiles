@@ -257,3 +257,8 @@ augroup END
   " Start interactive EasyAlign in visual mode (e.g. vipea)
   xmap ea <Plug>(EasyAlign)
 
+" Easy Ctags
+" -----------------------
+  " Set Async True
+  let g:easytags_async =  1
+  let g:easytags_auto_update = 1
