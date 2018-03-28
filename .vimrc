@@ -262,3 +262,7 @@ augroup END
   " Set Async True
   let g:easytags_async =  1
   let g:easytags_auto_update = 1
+  "shortcut to search
+  map <Leader>; <C-]>
+  "shortcut to go back
+  map <Leader>' <C-t>
