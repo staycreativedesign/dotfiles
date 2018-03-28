@@ -38,14 +38,17 @@ Plugin 'szw/vim-tags'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'christoomey/vim-system-copy'
+Plugin 'xolox/vim-easytags'
+Plugin 'xolox/vim-misc'
 
 call vundle#end()                       " required
 filetype plugin indent on               " required
 
 syntax on
 
+
 " colorscheme Tomorrow-Night
-colorscheme afterglow
+colorscheme duoduo
 set rtp+=/usr/local/opt/fzf
 set grepprg=ag
 set ttyfast
@@ -97,6 +100,8 @@ set iskeyword+=_,$,@,%,# " none of these should be word dividers, so make them n
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/.idea/*,*/.DS_Store,*/vendor,*/.keep
 vnoremap <silent> * :call VisualSearch('f')<CR>
 vnoremap <silent> # :call VisualSearch('b')<CR>
+let g:syntastic_quiet_messages = { "level": "warnings"  }
+
 
 " Quick write and quit
 " ------------------------
