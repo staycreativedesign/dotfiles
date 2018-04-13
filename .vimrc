@@ -30,7 +30,6 @@ Plugin 'christoomey/vim-tmux-runner'
 Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'mileszs/ack.vim'
 Plugin 'othree/html5.vim'
-Plugin 'craigemery/vim-autotag'
 Plugin 'tpope/vim-dispatch'
 Plugin 'tpope/vim-eunuch'
 Plugin 'junegunn/fzf.vim'
@@ -38,8 +37,11 @@ Plugin 'szw/vim-tags'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'christoomey/vim-system-copy'
-Plugin 'xolox/vim-easytags'
-Plugin 'xolox/vim-misc'
+Plugin 'craigemery/vim-autotag'
+
+" Plugin 'jsfaint/gen_tags.vim'
+" Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-misc'
 
 call vundle#end()                       " required
 filetype plugin indent on               " required
@@ -257,12 +259,17 @@ augroup END
   " Start interactive EasyAlign in visual mode (e.g. vipea)
   xmap ea <Plug>(EasyAlign)
 
-" Easy Ctags
+"  Gen Tags
 " -----------------------
   " Set Async True
-  let g:easytags_async =  1
-  let g:easytags_auto_update = 1
-  "shortcut to search
-  map <Leader>; <C-]>
-  "shortcut to go back
-  map <Leader>' <C-t>
+"   let g:gen_tags#use_cache_dir = 1
+"   let g:loaded_gentags#gtags = 1
+"   let g:gen_tags#ctags_auto_gen = 1
+"   let g:gen_tags#ctags_split = 'v'
+"
+"  "shortcut to search
+"   map <Leader>; <C-]>
+"   "shortcut to go back
+"   map <Leader>' <C-t>
+map <leader>; :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+let g:autotagTagsFile="tags"
