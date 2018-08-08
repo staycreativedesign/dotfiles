@@ -49,13 +49,17 @@ filetype plugin indent on               " required
 syntax on
 
 
+
 " colorscheme Tomorrow-Night
 colorscheme duoduo
+set background=dark
+highlight Normal ctermbg=None
+
+
 set rtp+=/usr/local/opt/fzf
 set grepprg=ag
 set ttyfast
 set lazyredraw
-set background=dark
 set regexpengine=1
 set autoindent
 let mapleader = "\<Space>"
@@ -223,6 +227,7 @@ augroup END
 
 " Fzf
 " ------------------------
+  let $FZF_DEFAULT_COMMAND = 'ag -g ""'
   nnoremap <C-p> :FZF<CR>
   nnoremap <Leader>f :Ag<Space>
 
