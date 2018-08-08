@@ -121,3 +121,6 @@ fpath=(/usr/local/share/zsh-completions $fpath)
 export PATH=$PATH:$HOME/.motivate
 export PATH=/usr/local/bin:$PATH
 motivate
+
+export PATH=$PATH:$HOME/development/flutter/bin:$PATH
+
