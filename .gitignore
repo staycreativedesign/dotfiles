@@ -21,3 +21,22 @@ node_modules
 tags
 gems.tags
 EOT
+*.keep
+*.cache
+.sass-cache/*
+*.css.map
+
+
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore Byebug command history file.
+.byebug_history
+tmp/*
+# public/*
