@@ -99,6 +99,8 @@ alias irc="irssi"
 alias reddit="rtv"
 alias bi="bundle install"
 alias sg="shotgun config.ru"
+alias mds="mina staging deploy"
+alias mdp="mina production deploy"
 
 export EDITOR='vim'
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
