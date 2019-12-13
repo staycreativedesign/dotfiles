@@ -6,7 +6,7 @@ call vundle#rc()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'mattn/gist-vim'
 Plugin 'mattn/webapi-vim'
@@ -38,7 +38,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'junegunn/vim-easy-align'
 Plugin 'christoomey/vim-system-copy'
 Plugin 'craigemery/vim-autotag'
-
+Plugin 'w0rp/ale'
 " Plugin 'jsfaint/gen_tags.vim'
 " Plugin 'xolox/vim-easytags'
 " Plugin 'xolox/vim-misc'
@@ -50,11 +50,12 @@ syntax on
 
 
 
-" colorscheme Tomorrow-Night
 colorscheme duoduo
-set background=dark
+"colorscheme gruvbox
+" set background=dark
 highlight Normal ctermbg=None
 
+let g:airline#extensions#ale#enabled = 1
 
 set rtp+=/usr/local/opt/fzf
 set grepprg=ag
@@ -253,7 +254,8 @@ augroup END
 
 " Mina deploy
 " -----------------------
-  nnoremap <leader>md :!mina deploy<cr>
+  nnoremap <leader>mdp :!mina production deploy<cr>
+  nnoremap <leader>mds :!mina staging deploy<cr>
 
 " Ctags
 " -----------------------
