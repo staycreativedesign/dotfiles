@@ -104,7 +104,6 @@ alias mdp="mina production deploy"
 
 export EDITOR='vim'
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
 
 if [[ -z "$TMUX" ]]
 then
@@ -125,4 +124,15 @@ export PATH=/usr/local/bin:$PATH
 motivate
 
 export PATH=$PATH:$HOME/development/flutter/bin:$PATH
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
+
+#grep rails routes
+rr() {
+  if [ -n "$1" ]; then
+    rails routes | grep "$1"
+  else
+    rails routes
+  fi
+}
 
